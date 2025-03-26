@@ -1,0 +1,169 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+  height: 100%;
+  background: linear-gradient(135deg, #000000, #928d8d);
+  color: white;
+  max-width: 100%;
+}
+
+h4 {
+  display: flex;
+  font-size: 35px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: burlywood;
+}
+
+h5 {
+  font-weight: 600;
+}
+
+hr {
+  background-color: burlywood;
+}
+
+strong {
+  color: burlywood;
+  font-weight: bold;
+}
+
+#img-accueil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  margin: 100px auto;
+  width: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 110px;
+  padding-right: 80px;
+  box-shadow: blue 10px;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.cards {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: white;
+  margin-inline: 5px;
+  box-shadow: black;
+  margin-left: 20px;
+  margin-top: 25px;
+}
+
+.cards:hover {
+  background-color: green; /* Couleur au survol */
+  color: black;
+  transform: scale(1.05); /* Agrandissement de 5% */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Accentue l'ombre */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Accentue l'ombre */
+  border: 2px solid transparent;
+  background: linear-gradient(white, white),
+    linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb); /* Dégradé visible */
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.card-parcours:hover {
+  transform: scale(1.05); /* Agrandissement de 5% */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Accentue l'ombre */
+  font-weight: 500;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Accentue l'ombre */
+  border: 2px solid transparent;
+  background: linear-gradient(135deg, #000000, #928d8d),
+    linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb); /* Dégradé visible */
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  color: white;
+}
+
+button {
+  width: 40%;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+#cv {
+  font-weight: bold;
+  color: white;
+}
+
+#cv:hover {
+  text-decoration: none;
+}
+
+.card-projet:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Accentue l'ombre */
+  border: 2px solid transparent;
+  background: linear-gradient(135deg, #000000, #928d8d),
+    linear-gradient(45deg, #ff6b6b, burlywood, burlywood); /* Dégradé visible */
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.nav-link:hover {
+  background-color: white;
+  color: white;
+}
+
+.card-projet {
+  background-color: linear-gradient(135deg, #000000, #928d8d);
+  border: 1px solid burlywood;
+  height: 15rem;
+}
+
+footer {
+  background-color: rgb(94, 92, 92);
+  color: #000000;
+}
+
+.card-contact {
+  border: 1px solid burlywood;
+  background-color: linear-gradient(135deg, #000000, #928d8d);
+}
+
+@media (max-width: 798px) {
+  #test {
+    margin: -2rem auto;
+    font-size: 40px;
+    display: inline;
+  }
+
+  .cards {
+    margin-top: 1rem;
+  }
+
+  .btn {
+    width: 80%;
+  }
+
+  #Projets {
+    margin-top: 2rem;
+  }
+
+  #Parcours {
+    margin-top: 2rem;
+  }
+
+  #lien {
+    margin-top: 30px;
+  }
+
+  .card-projet {
+    height: 22rem;
+  }
+}
