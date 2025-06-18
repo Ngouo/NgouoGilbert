@@ -24,13 +24,7 @@
   <body>
     <nav
       class="navbar navbar-expand-lg navbar-light"
-      style="
-        position: fixed;
-        top: 0;
-        z-index: 1000;
-        width: 100%;
-        background-color: burlywood;
-      "
+      style="top: 0; z-index: 1000; width: 100%"
     >
       <a style="font-weight: bold" class="navbar-brand" href="#">GILDEV</a>
       <button
@@ -48,7 +42,10 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#Accueil" style="margin-right: 0px"
+            <a
+              class="nav-link"
+              href="#Accueil"
+              style="margin-right: 0px; color: green; font-weight: 600"
               >Accueil <span class="sr-only">(current)</span></a
             >
           </li>
@@ -57,7 +54,10 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#Parcours" style="margin-right: 0px"
+            <a
+              class="nav-link"
+              href="#Parcours"
+              style="margin-right: 0px; color: green; font-weight: 600"
               >Parcours <span class="sr-only">(current)</span></a
             >
           </li>
@@ -66,7 +66,10 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#Projets" style="margin-right: 0px"
+            <a
+              class="nav-link"
+              href="#Projets"
+              style="margin-right: 0px; color: green; font-weight: 600"
               >Projets <span class="sr-only">(current)</span></a
             >
           </li>
@@ -75,7 +78,10 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#Contacts" style="margin-right: 800px"
+            <a
+              class="nav-link"
+              href="#Contacts"
+              style="margin-right: 800px; color: green; font-weight: 600"
               >Contacts <span class="sr-only">(current)</span></a
             >
           </li>
@@ -359,7 +365,7 @@
 
         <hr />
         <!-- Section SKILLS (Compétences) -->
-        <section id="Skills">
+        <section id="Skills" class="hidden">
           <p>
             Je suis un développeur web passioné par la créations de sites et
             d'applications web robustes et utiles au quotidien. Je travaille
@@ -375,12 +381,12 @@
         <!-- Fin de la section SKILLS -->
         <hr />
         <!-- Debut de la section PARCOURS -->
-        <section id="Parcours">
+        <section id="Parcours" class="hidden">
           <h4 id="Skills">PARCOURS</h4>
           <br />
-          <div class="card-parcours shadow">
+          <div class="card-parcours mx-auto shadow">
             <div class="card-body">
-              <u><h5>PROFESSIONEL</h5></u>
+              <u><h5>PROFESSIONEL</h5></u><br />
               <ul>
                 <li>
                   <strong>
@@ -428,7 +434,7 @@
           <br />
           <div class="card-parcours shadow">
             <div class="card-body">
-              <u><h5>ACADEMIQUE</h5></u>
+              <u><h5>ACADEMIQUE</h5></u><br />
               <ul>
                 <li>
                   <strong>
@@ -476,148 +482,118 @@
         <!-- Fin de la section PARCOURS -->
         <hr />
         <!-- Debut de la section PROJETS -->
-        <section id="Projets">
+        <section id="Projets" class="hidden">
           <h4>PROJETS</h4>
           <div class="row mt-5 pt-3">
             <div class="col-md-6">
-              <div class="card-projet my-2 shadow">
+              <div
+                class="card-projet mx-auto shadow"
+                style="width: 22rem; height: 30rem; margin-bottom: 15px"
+              >
+                <img
+                  src="places.jpg"
+                  class="card-img-top"
+                  style="height: 13rem"
+                  alt="..."
+                />
                 <div class="card-body">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <img
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEk0lEQVR4nO2c709TVxjH+QP2w803e70/aDhLebFXxtHLRJ0xQb3XbZFtmWyZvXeLrrdIgj8q6DYmBRESHSv0B6XbyGgsZlWCWNQglmLBQumvZ3kuKTEL0Nue3tue2/NJvklz7+nJuZ88557n1a2rq0KaBbGB4yU3J0ivMBZBHOMEaX+l10UFHC/9wAniPEo8eOK7NzEoz8KLDyyCaK30+qqaZqw8QZz/+Iz13f/fw2sWXnrSdMr6YWVWRwEcL7lR4k73mwSxkeOl0ToauXt+316vbB70yKak22aCYsMJUuHwYgq37E5r4E59+zbHSxtq5ipljfhsPrlhwGP76J2yC/TYzf33ew5srI62QsJ9suhwKgUePfPjW7sJtKgUWMoaV0Zb4f71Axvejsae8gu0mdZXXKXJS6gWKMV3O203T2cxrpXAvMRxe+Ni2QViiZe6qIRagYIEeFAc5s/v3e4Q4QTpqdp5SNbqs5tXqBXI8WLSIohRPDBwO2M2T2fpqYUXk0ygoFpknOOl1GbUbVsqK1AtxQogjVqYQKFGBH7a9pNu1XfsS5vxBMrXbukm0N49aDyBCy9icPxrWXN5x7+S4Xl02XgCkeX4Klzsua3JdsY5sfKKkUedwGqECSSECSSECSSECSSECaw1gdlMCiIhJwScLTBy6QMlAedhiEw7IZtNg95QJTD5Kgr+Xg6Cwy0Qe2CFzItLSvD31FAL+H9rhmQiCnpCjcBsJqXIexz4AiDm2DZzgc9h4uYnulYiNQIfh/qUyttJXj5Tw4cgMt0PekGNwEDf5rYtJDAWtirvRL2gRuDI5XrlfVdIYGaxSxmrFl9oVlWMIXCxq6DA9GIX/HF5H+gFNQIDTrVb+BwEnEdAL6gRGJl2Kq1KIYH/DOEhMgB6QY3AbDat9HnYquwk79HEZzBx8xDkWBuzPdgko0RsVXCrbjXS4XNK5aG8ZGIJ9ISaCny9ErHPw1YFDxbMn/1HlW2rZ+VRKTCTzUFwJgqOO2Fo754EodMPpzv9ym+8hvdwjJ5QIzA0uwTfXJuE73vvgcO/AEMP18D1JKNkaGZNuYb3cAyOVYvh+8BcDmDQPwdtV/6CvtBLcC/Arum791IZi//B/2pN1Qu85Z+DszemYGQ+XVBePr/Pp6H9xhTcnpirbYGh2SVou/o3jETUy9uSGEkplRh6tFSbAjPZnPI+6w0uFy0vn1+DMWUOLQ+WqhUYnIlC+8/BkuXlg1sZ56o5gY47Ybg6/oxY4BXfM3DcDdeewLPdkzDw7yqxQJwD56o5gac7/dBq85YlOFfN9oHVDhNICBNICBNICBNICBNICBNoVIE+lf2ZXqFOIC0wgYQwgYQwgYQwgYQwgYQwgUYV6KuC3o/1gbVcgbTABBLCBBLCBBLCBBLCBBLCBBLCBBLCBNIuMGHAMIFuJhAMV4H4gdaV0RMV314JjYOfAPV1aPAJUK9sGn7Y27Re6QdMaJmxkxD+5WB6XIuP0LoumN/z2hu8Htm0Nt5hjhsxXrlh3dthHnNJ9XvKLnBLpFS/x2Pb/74R47pgfkMzcQwGo64K+Q+vNCbyK4oq0gAAAABJRU5ErkJggg=="
-                        alt="parse-from-clipboard"
-                        width="100"
-                        height="95"
-                        class="img-thumbnail"
-                      />
-                    </div>
-                    <div class="col-md-8">
-                      <h5>MakeCV</h5>
-                      <hr />
-                      <p>
-                        Site web permettant de concevoir facilement et
-                        gratuitement un CV pour étudiants ou professionels.
-                      </p>
-                      <hr />
-                      <button
-                        class="btn btn-light"
-                        style="background-color: burlywood"
-                      >
-                        <a
-                          href="https://makecv.onrender.com/"
-                          target="_blank"
-                          style="color: white; font-weight: bold"
-                          >Visiter</a
-                        >
-                      </button>
-                    </div>
-                  </div>
-                  <br />
+                  <h5 class="card-title">PlaceConsult</h5>
+                  <p class="card-text" style="color: black">
+                    Application web de recherche des différents lieux au
+                    Cameroun selon une catégorie précise.<br />
+                    <br />
+                    Technos :
+                    <span style="color: blue; font-weight: 500"
+                      >Django, Bootstrap, MySQL</span
+                    >
+                  </p>
+                  <a
+                    href="http://placeconsult.onrender.com/"
+                    class="btn btn-success"
+                    >Visiter</a
+                  >
                 </div>
               </div>
             </div>
             <div class="col-md-6">
-              <div class="card-projet my-2 shadow">
+              <div
+                class="card-projet shadow mx-auto"
+                style="width: 22rem; height: 30rem; margin-bottom: 15px"
+              >
+                <img
+                  src="makecv.jpg"
+                  class="card-img-top"
+                  style="height: 13rem"
+                  alt="..."
+                />
                 <div class="card-body">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <img
-                        class="img-thumbnail"
-                        width="100"
-                        height="95"
-                        src="data:image/png;base64,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"
-                        alt="external-encryption-cyber-security-flaticons-lineal-color-flat-icons-4"
-                      />
-                    </div>
-                    <div class="col-md-8">
-                      <h5>Encryption App</h5>
-                      <hr />
-                      <p>
-                        Executable Windows permettant de crypter / décrypter
-                        n'importe quel texte.
-                      </p>
-                      <hr />
-                      <button
-                        class="btn btn-light"
-                        style="background-color: burlywood; width: 120px"
-                      >
-                        <a
-                          href="doc/Encrypt.rar"
-                          download=""
-                          style="color: white; font-weight: bold"
-                          >Télécharger</a
-                        >
-                      </button>
-                    </div>
-                  </div>
-                  <br />
+                  <h5 class="card-title">MakeCV</h5>
+                  <p class="card-text" style="color: black">
+                    Site web permettant de concevoir facilement et gratuitement
+                    un CV pour étudiants ou professionels. <br /><br />
+                    Technos :
+                    <span style="color: blue; font-weight: 500">
+                      Django, Bootstrap, SQLite</span
+                    >
+                  </p>
+                  <a href="https://makecv.onrender.com/" class="btn btn-success"
+                    >Aller vers le site</a
+                  >
                 </div>
               </div>
             </div>
             <div class="col-md-6">
-              <div class="card-projet my-2 shadow">
+              <div
+                class="card-projet mx-auto shadow"
+                style="width: 22rem; height: 30rem; margin-bottom: 15px"
+              >
+                <img
+                  src="agyl.jpg"
+                  class="card-img-top"
+                  style="height: 13rem"
+                  alt="..."
+                />
                 <div class="card-body">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <img
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAMUUlEQVR4nO2deVBURx7HZ+/dqt2trdo/trJH7VHJJgYQlFuiKIJyKpcioGLQRNCoSWnMKmpWiRqOqGASRKOoq/GKmhg1xiNEwfdgQUXFC5Bzugdm+g14IudvqzvgwnDNwHu8gXnfql8BM/OY995nfr/u/vWve1QqRYoUKVKkSJEiRYoUKVKkSJEiRYoUKVKkyKx0GOAnuTrswAloOU/Q15yAbvME63mCmjmCG+jvnIBu8QI+zgtoLa/TjD8NRb+Q+7yHnXht1UscQZ+wmy9gMMkIruUITue0aLTc1zHkxeurRtJPO0dQi8kguoWDvsmuVdvJfV1DTvkAP+MJXs3CkBggOkNp4gW8ObOs7JdyX+eQEF+r+RtP8FXRQRgYR3ABDYVyX69Ziyd4BEdwpdQwOrQvwmVBPUbu6zZLXdZhR45g0n6z6pubwFD0MfHBoEcc0TjJff1mpXyt9gVOQJpB84yu4Utn8eELAIrACLV7RbvHSOMlrLG/wVVW/kpl6eIFvEEuz+gmfG1SWXqP6mlTYyv95Nc1PnvuCYZeYawXmWLnSm7B+6tXwAwPd/AdaQ1hE8bBqhXLWj9K+9hXZaniCd4vhyccvngOQl9zhX2fbgJ1eSE0PNOBuqwQ9n6cDMGuTs3etlaTVJamXEFj1dsIXKo248ytaxA2fhwUXs2ClubaLnbzyiUIdLR/4jtixF9VliSO4A+l9ILdJ47CgpnhMMVhFLO3ZkfAocyzsCbuPchISewWRrvt2ZrcEuTksFtlKQKAH3EElUkFY/2HH0CEhztcOnMMHj9A8KhODRe/OQazvT3B124kVJQU9AqkqvQmTHUcLaiGugqh8Oc5Oo0HR1ASR3AWL+BiTkCPOQE/4Qmu4Ai+RD2DI+htKT2DwqgTKrrcaL2uFJJXLoOmRtIrkPon1eBtbdUa7Op02s9u5BP/UXaPgl2cvp5o89I/VENBmTU1v+YF9B5PkFaORprvYDRMUc/o7Yb3ZbSh97Gxoo18cw26B6TmPhzYnto0xX6U3uyhXNahQDbSlRkE32ZTHEazMGUqhCM7P4GMlAT4fFsKNNRruw1r+9I2NwW7OB5VmaMyAX5KB1IcQa293aDPjnwO0aGBEOTqBIEu0tkUR3vwH2ULvrY2MNVhNAQ7O0KIq1MnCx3jDIvDQiDr2+O9th8Ht6d2+5ygLQVfW+sWX1ubhhBX5/xJVq/4q8ylUeYFvLOvT2vGl4dhstUI+PeiGDi4I1V2O7A9Fd5f+AY7J/67kz1C2ZG8HrYnfQAZWz6ELzLSOj3X2ECYB2af/RIiJ7g/DnS0TzKHdEeqMeEjZlYExM1/HVpbas3K/jV3FqyYN8eoUJZ36Rtm3T1HOw7T3FzqZfUUXsC+xsZzmpbYnZIgO4BWA9v50QaYM9nTKCDUI9IT42HP1iTY98kmePa0ptPzF08fhVBXpzxZYOQQ8ltTJpBofmhPaqLsAFoNbNfmjRA1aaLJDb+m6i5r9Ds+Rsc4fnY2z2QBwhG00pQez3AD0tJcC1/s+rTT3w/rquQBQmui6ODO0oG0GBgd88gSsngB+5g6JugJSLTvJNbTGSyj7ycFENqoR0wY+3iy9St+Q2Iiabh6yKM6NfMMCmOqo33ioMNoA3J+uAC5fS0bIsaP7bfH0WzAG9OCHgy6Z9ABIEsWCngLL+CnwwVI4zMt5NWUDzhNw+nVAYPaZrBisgGcsFhtSLRBGzBQ+zh+Fbwzf+7AgQjoguQgaLU4K2we4Mmas4ckLH8bYiPDBg6EoNZcrfqfktbUcgL+SgwYlgCEp0bQYsmA8ASliQXDUoBwAjoiDQwB+/aVSh8uQPKyz8DuI/vEAnJbGiAEXxMThjkDaW2phYI6jThACNaJDoMjak+xYZgzkCuXz0JC0npxrpOgJvGB/DDOsBgguzZtgHBPD5GAYL3oQKRaINMTkFUx0aLltXobo5Tduwp1pExSIJyA70kARJpqETk95MzRfRDtNxmWRUXAVe6chEAk6GX1Zy1flqYMNiSuh0ivieA3aiTM9vWG5JRkyNKUyw6kvLgAZoxzg3WLYyFj80a48PUhyYDkCHiZ+EAEhE05iUu4DN6YHgJxMfPgznUOnjzSwL2bObB64ZsQGzkDsjUVsoas4sJceN3HC9IT1sHN/IuShixJRuqcgPJMOYmNSRsYDMO0dHOjwKCsXrUC3l2ykNXUBtjbwdpFMVB5v2BQveTT9avB28YKss4elwwIrcRUSSFaX2XKidAwdecG1+1cQfHtPBbC9m9LAS0uAi0uZnVOM9zdQIvvDTKUNTDtNVfI/f60VEBmSwKE02P33t44u6YS1q1bA8FuLmxdhbf1q6z+tacJnMcPcZfHDqSnwAfvLByUkNVuNFyePJgBS8JDpQlZBJXQ9ZGiAwGAH/fW9Y2Pfx/iYuexTzytdT22Jx2am/QmzbJRTwlydhi0Rp0Wxm1duxKSVyyFd6MiJWtDeAFfoUlZ0aHkEDSp4xuduXMdli6cz0o0aQjSaUr6PeVJ4V0+f4KVea6aHw2oolBSIDpNMXwUt4z1tBbPCIHSu1ekBEJtadsi1iJRoXACTmmHMW2cGxzcsZV9smmx2ECKAfanbYGC3EwoL7kOu7ckQLCzw3MoUoas704d6bYzIT4Q9DBbp/uNSpICaoJPUM+gdbBilMmwWiaD+thDO7bCxmWLB7WBFxtIDwtSiySB4j/arpl6hlhADI1U34ewsWOGNJBu7JhKKvna2tRLCUSLi9hyAXMGYuyS7IdNDe2vb2j3EINNEQbuNUHODt/uT9vcJBWQA9u2QPySBWYNxFTjBPRAJZUm27z8coC9bR2FIqanaHERg0F7P1WlN4YEEMPl2f3Y2OCuKFC8bV78c5CLwykavnrr5czx8WI3Oy4mmv2kvR5q9PeZE8d3em2QswPzDDlhSNiG3FHJJV7AakufoKo38BxOQPKtPWxb8jwgIPVPqk26ic1NBBrqa0w6pqf3kKQNkSqvZSSQ9P4CaWnWs6RfwGg7NrdtzI19oK+At6YHQdQkT8CVt4w6pvRuPoS6ucDaxbHQ2KCTFgjBtZm1Zb+TE8js/gBpadaz/BJNTs4K8GPp+e7mKzpaLSmFmKAAltgM95oIkR7ufbZB9PkwdzeI8PECXzubLlDEBkL3EZYNxg9AKv9kTA1XRyAMxro4BiP1szQ24zh/ZjgEOjvAvZt8tzdW0N6HN6f6Q8hrrvBVXjacKy6EWf4+EDZuTJf8VLvRFP8sLw+I9PZir9976kuWi+sIRVwgKNcsdjjlCfreWCAtTQJL9nnbWEHavl3Pn/++shiiQwJZSr+86FqnG0uqS2BegA+EjnODr/K558ecv38boqb4w/SxrlByO6/TMXTrjLl+3hDm4c52/Wk/Zu/J4wzKuiUL2LYaIs6HVGbrKv6oMgcZE7YoEDqnnbRiKfjYWEPa/owur8msKIY5QQEQPn7s84RjddUdiJrsyW7sqRv5XY8pL2Igg12d2FoPegxd6xcbMhVCx46BkwW53a6Zp9nm+LcXwPbEeBGAoFyzgdFhs+OKvoDQsYfPSGvYcajn0k0aWmiIme01EQpyLsBMz/Gsvej4Ke8OytzQIAh2cWSloYvCQiDIzQVOXOF7PGbnsYNtOz2M6j8QunW5gJab5Z7yHEFz+wJCPSP9wH/6vNBv716HGZ4T2AAy0seL/d3XMRdRKducgB4z1ckBvuAy+zymHUqPQAi6SMcUdPsotouRgB7RQR9NHnIER8namzJyppHr6eITNiey7ZKM/fSdvJ4HcSuXM48x9hgKZc2alXDk0nmjj6HnlJSS3OVxjqA6SaZkB1NcTeWLNLHW/1iMzcJor5ETNNNUw0GcoJku9lIG3vgb2cIJKIN+h8hA/gevxwtUw0kcwe/IBOQt+v45eo1fvzyV4Fqe4BDVcBSFMliewlHPIGhRx/fnq6v/wBO0re0rKfoAQT0K7f6voP6LajiLhi866S8pDAE94AkO7ukc6PiA1+NYjqCT7GuRfugpPaUDOfoYrcel2QaVpYhubM8TnC2NZ+CsnFrN3+W+xiEntuscUb8u2nawBJVfFlA4/b9yX9uQFh3R5+jwLE5A35n8XVL029cEdIF2RyWpDrR05Wu1L/B6PLOt4aXJSTUdjP2/t4PKOQFl8gLeyulRZO4D9e/lPmdFihQpUqRIkSJFihQpUqRIkSJFihQpUqRI1UX/AzrkVGEdM6RMAAAAAElFTkSuQmCC"
-                        alt="bill"
-                        class="img-thumbnail"
-                      />
-                    </div>
-                    <div class="col-md-8">
-                      <h5>DIT SALARIES</h5>
-                      <hr />
-                      <p>
-                        Application de gestion des salariés au sein d'un
-                        établissement scolaire avec génération d'une facture.
-                      </p>
-                      <hr />
-                      <button
-                        class="btn btn-light"
-                        style="background-color: burlywood"
-                      >
-                        Visiter
-                      </button>
-                    </div>
-                  </div>
-                  <br />
+                  <h5 class="card-title">Bigoodee</h5>
+                  <p class="card-text" style="color: black">
+                    Landing Page du site Bigoodee.fr présentant les différents
+                    services et produits proposés par Bigoodee <br /><br />
+                    Technos :
+                    <span style="color: blue; font-weight: 500"
+                      >HTML, CSS, Bootstrap
+                    </span>
+                  </p>
+                  <a
+                    href="https://ngouo.github.io/AGYL"
+                    target="_blank"
+                    class="btn btn-success"
+                    >Aller vers le site</a
+                  >
                 </div>
               </div>
             </div>
             <div class="col-md-6">
-              <div class="card-projet my-2 shadow">
+              <div
+                class="card-projet mx-auto shadow"
+                style="width: 22rem; height: 30rem; margin-bottom: 15px"
+              >
+                <img
+                  src="encodage.jpg"
+                  class="card-img-top"
+                  style="height: 13rem"
+                  alt="..."
+                />
                 <div class="card-body">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <img
-                        class="img-thumbnail"
-                        src="data:image/png;base64,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"
-                        alt="system-task"
-                      />
-                    </div>
-                    <div class="col-md-8">
-                      <h5>MONITORING</h5>
-                      <hr />
-                      <p>
-                        Site vitrine du département de MONITORING d'une
-                        entreprise de la place.
-                      </p>
-                      <hr />
-                      <button
-                        class="btn btn-light"
-                        style="background-color: burlywood"
-                      >
-                        <a
-                          href="https://github.com/Ngouo/Monitoring-Services"
-                          style="color: white; font-weight: bold"
-                          >Visiter</a
-                        >
-                      </button>
-                    </div>
-                  </div>
-                  <br />
+                  <h5 class="card-title">EncryptionApp</h5>
+                  <p class="card-text" style="color: black">
+                    Executable Windows permettant de crypter / décrypter
+                    n'importe quel texte. <br /><br />
+                    Technos :
+                    <span style="color: blue; font-weight: 500">Python</span>
+                  </p>
+                  <a href="doc/Encrypt.rar" download="" class="btn btn-success"
+                    >Telecharger</a
+                  >
                 </div>
               </div>
             </div>
@@ -627,7 +603,7 @@
 
         <hr />
         <!-- Debut de la section Contacts -->
-        <section id="Contacts">
+        <section id="Contacts" class="hidden">
           <h4>CONTACTS</h4>
           <br />
           <p>Vous pouvez me contacter via les différents liens ci-dessous :</p>
@@ -677,13 +653,7 @@
                   </div>
 
                   <center>
-                    <a
-                      id="lien"
-                      href="https://wa.me/237652944054"
-                      style="color: burlywood"
-                    >
-                      Whatsapp</a
-                    >
+                    <a id="lien" href="https://wa.me/237652944054"> Whatsapp</a>
                   </center>
                 </div>
                 <div class="col-md-3 mb-4">
@@ -723,12 +693,7 @@
                   </div>
 
                   <center>
-                    <a
-                      id="lien"
-                      href="https://github.com/Ngouo"
-                      style="color: burlywood"
-                      >LinkedIn</a
-                    >
+                    <a id="lien" href="https://github.com/Ngouo">LinkedIn</a>
                   </center>
                 </div>
                 <div class="col-md-3 mb-4">
@@ -771,11 +736,7 @@
                   </div>
 
                   <center>
-                    <a
-                      id="lien"
-                      href="https://www.facebook.com/gilbert.ngouo"
-                      style="color: burlywood"
-                    >
+                    <a id="lien" href="https://www.facebook.com/gilbert.ngouo">
                       Facebook</a
                     >
                   </center>
@@ -821,12 +782,7 @@
                   </div>
 
                   <center>
-                    <a
-                      id="lien"
-                      href="mailto:ngouogilbert@gmail.com"
-                      style="color: burlywood"
-                      >Gmail</a
-                    >
+                    <a id="lien" href="mailto:ngouogilbert@gmail.com">Gmail</a>
                   </center>
                 </div>
               </div>
@@ -845,7 +801,6 @@
           font-weight: 350;
           justify-content: center;
           align-items: center;
-          background-color: burlywood;
         "
       >
         <p style="margin-top: 30px; font-size: 20px; font-weight: 200">
