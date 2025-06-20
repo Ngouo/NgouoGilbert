@@ -86,6 +86,10 @@ button {
   height: 15rem;
 }
 
+#Skills p {
+  text-align: center;
+}
+
 #lien {
   color: green;
 }
